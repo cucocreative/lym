@@ -3,11 +3,14 @@ body {
     color: $blue-2;
 }
 
+.bg-green {
+    background: $green-1 !important;
+}
+
 .logo {
     background: url('/assets/img/logo.png') no-repeat;
     background-size: 100%;
     font-size: 2rem;
-    margin-bottom: 2rem;
     max-width: 550px;
     min-height: 85px;
 
@@ -18,7 +21,7 @@ body {
     }
 }
 
-.section {
+.inter-section {
     margin: $section-margin auto;
 }
 
@@ -26,28 +29,22 @@ body {
     width: 50%;
 }
 
-.grid-gallery {
-    text-align: center;
-    width: 700px;
-    margin: auto;
-
-    div {
-        padding: .8rem;
-    }
+.btn--defaults {
+    border-radius: $border-radius--default;
+    background: none;
+    font-weight: bold;
 }
 
-@media #{$small-only} {
-    .menu {
-        width: 150px;
-    }
-
-    .grid-gallery {
-        width: 200px;
-    }
+.btn-adopt {
+    margin: 20px 5px 0 0;
 }
 
-nav {
-    margin-bottom: $global-margin;
+.btn-donate {
+    margin: 20px 5px 0 0;
+}
+
+.btn-email {
+    margin-top: 20px;
 }
 
 .scheme-wb2w {
@@ -58,7 +55,13 @@ nav {
 
 .scheme-g1g1b2 {
     border: $btn-border--default solid $green-1;
-    background: $green-1 !important;
+    background: $green-1;
+    color: $blue-2;
+}
+
+.scheme-g1g1b2:hover {
+    border: $btn-border--default solid lighten($green-1, 50%);
+    background: lighten($green-1, 50%);
     color: $blue-2;
 }
 
@@ -74,26 +77,29 @@ nav {
     color: $blue-2;
 }
 
+.scheme-b2wb2:hover {
+    background: $blue-2;
+}
+
 .scheme-b1wb1 {
     border: $btn-border--default solid $blue-1;
     background: $white;
     color: $blue-1;
 }
 
-.btn--defaults {
-    border-radius: $border-radius--default;
-    background: none;
-    font-weight: bold;
+.scheme-b1wb1:hover {
+    background: $blue-1;
 }
 
-.btn-adopt {
-    margin-right: $global-margin;
-    float: right;
+.scheme-b1b1w {
+    border: $btn-border--default solid $blue-1;
+    background: $blue-1;
+    color: $white;
 }
 
-.btn-donate {
-    margin-right: $global-margin;
-    float: right;
+.scheme-b1b1w:hover {
+    border: $btn-border--default solid #1779ba;
+    background: #1779ba;
 }
 
 .hero-section {
@@ -114,16 +120,24 @@ nav {
 }
 
 .hover-underline-menu {
-    width: 100%;
+    width: 100%;    
 
-    .menu {
+    .nav {
         background-color: $menu-underline-from-center-bg;
-
+        margin: 3rem;
 
         a {
             color: $blue-2;
             padding: 1.2rem 1.5rem;
             font-weight: bold;
+        }
+
+        ul {
+            margin-left: none;
+        }
+
+        li {
+            display: inline-block;
         }
 
         .underline-from-center {
@@ -157,6 +171,10 @@ nav {
 section#what-we-do {
     background: $blue-1;
 
+    .bg-grey {
+        background: $light-gray;
+    }
+
     img {
         width: 100%;
     }
@@ -180,9 +198,98 @@ section#donation {
 
     .donate-card {
         background: $white;
-        margin: $global-margin;
+        min-height: 250px;
+        width: 220px;
         color: $blue-2;
+        margin: $global-margin;
+        text-align: center;
+        padding: $global-padding;
+    }
+
+    .donate-card-image {
+        height: 110px;
+    }
+
+    .donate-card-image img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .donate-card-text {
     }
 }
 
+.what-news-text {
+    padding: 1.5rem 3rem;
 
+    h4 {
+        color: $blue-1;
+    }
+}
+
+footer {
+    background: $blue-3;
+    .sign-up {
+        margin-top: 3rem;
+    }
+
+    .email {
+        border-radius: 20px;
+        border: 2px solid $blue-1;
+        color: $blue-1;
+        max-width: 400px;
+        margin: 40px auto 0;
+        padding: 1rem;
+        text-align: center;
+        outline: none;
+    }
+
+    .email:focus {
+        border: 2px solid $blue-1;
+    }
+
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $blue-1;
+        opacity: 1;
+        /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $blue-1;
+    }
+
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: $blue-1;
+    }
+}
+
+.footer-right, .footer-left {
+    background: url('/assets/img/footer-repeat.png') bottom repeat-x;
+}
+
+.footer-center {
+    height: 650px;
+    background: url('/assets/img/footer.png') 50% bottom no-repeat;
+    max-width: 1000px;
+}
+
+@include breakpoint(small) {
+    .footer-center {
+       
+    }
+}
+
+@include breakpoint(medium) {
+    .footer-center {
+        
+    }
+}
+
+@include breakpoint(large) {
+    .footer-center {
+       
+    }
+}

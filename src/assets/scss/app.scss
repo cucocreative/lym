@@ -7,13 +7,13 @@
 // Global styles
 @include foundation-global-styles;
 
-//@include foundation-forms;
+@include foundation-forms;
 @include foundation-typography;
 
 // Grids (choose one)
 @include foundation-xy-grid-classes;
 // @include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-flex-grid;
 
 // Generic components
 @include foundation-button;
@@ -56,7 +56,7 @@
 
 // Helpers
 @include foundation-float-classes;
-// @include foundation-flex-classes;
+@include foundation-flex-classes;
 @include foundation-visibility-classes;
 // @include foundation-prototype-classes;
 
