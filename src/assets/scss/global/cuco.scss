@@ -1,14 +1,11 @@
+
 body {
     padding-top: 2rem;
     color: $blue-2;
 }
 
-.bg-green {
-    background: $green-1 !important;
-}
-
 .logo {
-    background: url('/assets/img/logo.png') no-repeat;
+    background: url(#{$path-images}logo.png) no-repeat;
     background-size: 100%;
     font-size: 2rem;
     max-width: 550px;
@@ -21,14 +18,14 @@ body {
     }
 }
 
-.inter-section {
-    margin: $section-margin auto;
+hr {
+    border: 0;
+    height: 21px;
+    background: url(#{$path-images}hr.png) 50% 0 no-repeat;
+    margin: 1em 0;
 }
 
-.find-a-friend {
-    width: 50%;
-}
-
+// buttons
 .btn--defaults {
     border-radius: $border-radius--default;
     background: none;
@@ -45,6 +42,11 @@ body {
 
 .btn-email {
     margin-top: 20px;
+}
+
+// color schemes
+.bg-green {
+    background: $green-1 !important;
 }
 
 .scheme-wb2w {
@@ -102,29 +104,14 @@ body {
     background: #1779ba;
 }
 
-.hero-section {
-    background: url('/assets/img/hero.png') 50% no-repeat;
-    background-size: cover;
-    height: $hero-height;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .hero-section-text {
-        position: relative;
-        top: 20%;
-        color: $white;
-        text-shadow: 1px 1px 2px $black;
-    }
-}
-
+// menu
 .hover-underline-menu {
     width: 100%;    
 
     .nav {
         background-color: $menu-underline-from-center-bg;
-        margin: 3rem;
+        margin: 2rem;
+        list-style-type: none;
 
         a {
             color: $blue-2;
@@ -162,8 +149,36 @@ body {
     }
 }
 
+// hero
+.hero-section {
+    background: url(#{$path-images}hero.png) 50% no-repeat;
+    background-size: cover;
+    height: $hero-height;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero-section-text {
+        position: relative;
+        top: 20%;
+        color: $white;
+        text-shadow: 1px 1px 2px $black;
+    }
+}
+
+.inter-section {
+    margin: $section-margin auto;
+}
+
+// find a friend
+.find-a-friend {
+    width: 60%;
+}
+
+// what we do
 .what-we-do-desc {
-    padding: 5rem 4rem;
+    padding: 4rem 2rem;
     color: $white;
     overflow: auto;
 }
@@ -184,12 +199,13 @@ section#what-we-do {
     }
 }
 
+// donation
 section#donation {
     background: $blue-2;
     color: $white;
 
     .donate-desc {
-        padding: 4rem;
+        padding: 4rem 1rem;
 
         p {
             margin-bottom: $global-padding * 2;
@@ -216,17 +232,21 @@ section#donation {
     }
 
     .donate-card-text {
+        padding: $global-padding;
+        padding-top: 0;
     }
 }
 
+// what news
 .what-news-text {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 2rem;
 
     h4 {
         color: $blue-1;
     }
 }
 
+// footer
 footer {
     background: $blue-3;
     .sign-up {
@@ -267,29 +287,49 @@ footer {
 }
 
 .footer-right, .footer-left {
-    background: url('/assets/img/footer-repeat.png') bottom repeat-x;
+    background: url(#{$path-images}footer-repeat.png) bottom repeat-x;
 }
 
 .footer-center {
     height: 650px;
-    background: url('/assets/img/footer.png') 50% bottom no-repeat;
+    background: url(#{$path-images}footer.png) 50% bottom no-repeat;
     max-width: 1000px;
 }
 
-@include breakpoint(small) {
-    .footer-center {
-       
+// responsive styles
+@include breakpoint(small only) {
+    .what-news-text {
+        padding: 1.5rem 4rem;
+        text-align: center;
     }
 }
 
-@include breakpoint(medium) {
-    .footer-center {
-        
+@include breakpoint(medium down) {
+    .hover-underline-menu {
+        .nav {
+            li {
+                display: block;
+                padding: .8rem;
+            }
+        }
     }
 }
 
-@include breakpoint(large) {
-    .footer-center {
-       
+@include breakpoint(medium only) {
+    .what-news-text {
+        padding: 1.5rem 6rem;
+        text-align: center;
+    }
+
+    section#donation .donate-desc {
+        padding: 4rem 2rem;
     }
 }
+
+@include breakpoint(large up) {
+    section#donation .donate-desc {
+        padding: 4rem 3rem;
+    }
+}
+
+
