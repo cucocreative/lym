@@ -155,9 +155,8 @@ hr {
 
 // hero
 .hero-section {
-    background: url(#{$path-images}hero.png) 50% no-repeat;
     background-size: cover;
-    height: $hero-height;
+    height: 600px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -177,6 +176,10 @@ hr {
 
 .inter-section {
     margin: $section-margin auto;
+}
+
+.inter-section-news {
+    margin-top: 0;
 }
 
 // find a friend
@@ -242,6 +245,10 @@ section#donation {
     .donate-card-text {
         padding: $global-padding;
         padding-top: 0;
+
+        h3 {
+            color: $blue-1;
+        }
     }
 }
 
@@ -258,7 +265,7 @@ section#donation {
 footer {
     background: $blue-3;
     .sign-up {
-        margin-top: 3rem;
+        margin-top: 4rem;
     }
 
     .email {
@@ -331,6 +338,10 @@ footer {
 
     .what-we-do-desc {
         padding: 4rem 3rem;
+    }
+
+    .hero-section {
+        background-position: 74% 0% !important;
     }
 }
 
