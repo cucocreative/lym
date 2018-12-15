@@ -1,7 +1,28 @@
 
+@font-face {
+    font-family: ludicrous;
+    src: url(/assets/fonts/Ludicrous.woff);
+}
+
+@font-face {
+    font-family: galanoBold;
+    src: url(/assets/fonts/Galano-Grotesque-Bold.woff);
+}
+
+@font-face {
+    font-family: galanoSemiBold;
+    src: url(/assets/fonts/Galano-Grotesque-Semi-Bold.woff);
+}
+
+@font-face {
+    font-family: galanoMedium;
+    src: url(/assets/fonts/Galano-Grotesque-Medium.woff);
+}
+
 body {
     padding-top: 2rem;
     color: $blue-2;
+    font-family: galanoMedium;
 }
 
 .logo {
@@ -19,8 +40,21 @@ body {
 }
 
 .handwritten {
-    font-family: 'Caveat Brush', cursive;
+    font-family: ludicrous;
 }
+
+.galano-medium {
+    font-family: galanoMedium;
+}
+
+.galano-bold {
+    font-family: galanoBold;
+}
+
+.galano-semi-bold {
+    font-family: galanoSemiBold;
+}
+
 
 hr {
     border: 0;
@@ -34,6 +68,8 @@ hr {
     border-radius: $border-radius--default;
     background: none;
     font-weight: bold;
+    font-family: galanoBold;
+    font-size: 1.2rem;
 }
 
 .btn-adopt {
