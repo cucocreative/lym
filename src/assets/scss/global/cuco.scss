@@ -301,14 +301,14 @@ footer {
     }
 }
 
-.footer-right, .footer-left {
-    background: url(#{$path-images}footer-repeat.png) bottom repeat-x;
+.footer-repeat {
+    background: url(#{$path-images}fence_repeat.gif) bottom repeat-x;
 }
 
 .footer-center {
     height: 650px;
-    background: url(#{$path-images}footer.png) 50% bottom no-repeat;
-    max-width: 1000px;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 // responsive styles
@@ -362,4 +362,36 @@ footer {
     }
 }
 
+.image-cell {
+    position: relative;
+}
 
+.image-cell img {
+    width: 260px;
+    height: 260px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    margin-top: $global-margin;
+    width: 260px;
+    height: 260px;
+    padding-top: 25%;
+    opacity: 0;
+    font-size: 4rem;
+    line-height: 1.2;
+    transition-duration: 1s;
+    transition-delay: 0s;
+        animation-name: fadeItOut;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+}
+
+.overlay:hover {
+    background: $blue-1;
+    opacity: 0.8;
+    color: white;
+    transition-delay: 0s;
+}
