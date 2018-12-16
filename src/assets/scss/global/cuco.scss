@@ -69,7 +69,7 @@ hr {
     background: none;
     font-weight: bold;
     font-family: galanoBold;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .btn-adopt {
@@ -266,7 +266,7 @@ section#donation {
         color: $blue-2;
         margin: $global-margin;
         text-align: center;
-        padding: $global-padding;
+        padding: 2rem $global-padding $global-padding;
     }
 
     .donate-card-image {
@@ -430,4 +430,8 @@ footer {
     opacity: 0.8;
     color: white;
     transition-delay: 0s;
+}
+
+.more {
+    color: $blue-1;
 }
