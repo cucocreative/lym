@@ -290,7 +290,9 @@ section#donation {
 
 // what news
 .what-news-text {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
+    width: 260px;
+    margin: auto;
 
     h4 {
         color: $blue-1;
@@ -350,8 +352,7 @@ footer {
 // responsive styles
 @include breakpoint(small only) {
     .what-news-text {
-        padding: 1.5rem 4rem;
-        text-align: center;
+        padding: 1.5rem 1rem;
     }
 
     // hero
@@ -382,15 +383,12 @@ footer {
 }
 
 @include breakpoint(medium only) {
-    .what-news-text {
-        padding: 1.5rem 6rem;
-        text-align: center;
-    }
-
     section#donation .donate-desc {
         padding: 4rem 2rem;
     }
 }
+
+
 
 @include breakpoint(large up) {
     section#donation .donate-desc {
@@ -402,15 +400,21 @@ footer {
     position: relative;
 }
 
-.image-cell img {
+.image-cell .wrapper {
     width: 260px;
     height: 260px;
+    margin: auto;
+}
+.image-cell img {
+    width: 100%;
+    height: 100%;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    margin-top: $global-margin;
+    position: relative;
+    top: -275px;
+    left: 0;
+    margin: $global-margin 0 auto auto;
     width: 260px;
     height: 260px;
     padding-top: 25%;
@@ -419,10 +423,6 @@ footer {
     line-height: 1.2;
     transition-duration: 1s;
     transition-delay: 0s;
-        animation-name: fadeItOut;
-        animation-duration: 1s;
-        animation-delay: 1s;
-        animation-fill-mode: forwards;
 }
 
 .overlay:hover {
