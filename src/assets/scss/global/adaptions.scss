@@ -1,0 +1,46 @@
+
+@include breakpoint(small only) {
+    .what-news-text {
+        padding: 1.5rem 1rem;
+    }
+
+    // hero
+    .hero-section {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@include breakpoint(medium down) {
+    .hover-underline-menu {
+        .nav {
+            li {
+                display: block;
+                padding: .8rem;
+            }
+        }
+    }
+
+    .what-we-do-desc {
+        padding: 4rem 3rem;
+    }
+
+    .hero-section {
+        background-position: 74% 0% !important;
+    }
+}
+
+@include breakpoint(medium only) {
+    section#donation .donate-desc {
+        padding: 4rem 2rem;
+    }
+}
+
+
+
+@include breakpoint(large up) {
+    section#donation .donate-desc {
+        padding: 4rem 3rem;
+    }
+}

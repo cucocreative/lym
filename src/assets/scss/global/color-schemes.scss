@@ -1,0 +1,67 @@
+
+.bg-green {
+    background: $green-1 !important;
+}
+
+.scheme-wb2w {
+    border: $btn-border--default solid $white;
+    background: $blue-2;
+    color: $white;
+}
+
+.scheme-wb2w:hover {
+    border: $btn-border--default solid $green-1;
+    background: $green-1;
+    color: $blue-2;
+}
+
+.scheme-g1g1b2 {
+    border: $btn-border--default solid $green-1;
+    background: $green-1;
+    color: $blue-2;
+}
+
+.scheme-g1g1b2:hover {
+    border: $btn-border--default solid lighten($green-1, 50%);
+    background: lighten($green-1, 50%);
+    color: $blue-2;
+}
+
+.scheme-wb1w {
+    border: $btn-border--default solid $white;
+    background: $blue-1;
+    color: $white;
+}
+
+.scheme-b2wb2 {
+    border: $btn-border--default solid $blue-2;
+    background: $white;
+    color: $blue-2;
+}
+
+.scheme-b2wb2:hover {
+    border: $btn-border--default solid $blue-1;
+    background: $white;
+    color: $blue-1;
+}
+
+.scheme-b1wb1 {
+    border: $btn-border--default solid $blue-1;
+    background: $white;
+    color: $blue-1;
+}
+
+.scheme-b1wb1:hover {
+    background: $blue-1;
+}
+
+.scheme-b1b1w {
+    border: $btn-border--default solid $blue-1;
+    background: $blue-1;
+    color: $white;
+}
+
+.scheme-b1b1w:hover {
+    border: $btn-border--default solid #1779ba;
+    background: #1779ba;
+}
