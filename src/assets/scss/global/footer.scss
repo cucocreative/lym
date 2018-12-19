@@ -47,4 +47,42 @@ footer {
     height: 650px;
     background-position: bottom;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+
+    .foot-notes {
+        color: white;
+    }
+}
+
+.social {
+    height: 120px;
+    li {
+        display: inline-block;
+        margin: $global-margin;
+    }
+
+    a {
+        width: 35px;
+        height: 35px;
+        display: block;
+    }
+
+    .facebook {
+        background: url('/assets/img/facebook.svg') no-repeat 50%;
+    }
+
+    .youtube {
+        background: url('/assets/img/youtube.svg') no-repeat 50%;
+    }
+
+    .instagram {
+        background: url('/assets/img/instagram.svg') no-repeat 50%;
+    }
 }
