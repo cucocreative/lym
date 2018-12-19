@@ -95,6 +95,12 @@ hr {
     color: $white;
 }
 
+.scheme-wb2w:hover {
+    border: $btn-border--default solid $green-1;
+    background: $green-1;
+    color: $blue-2;
+}
+
 .scheme-g1g1b2 {
     border: $btn-border--default solid $green-1;
     background: $green-1;
@@ -120,7 +126,9 @@ hr {
 }
 
 .scheme-b2wb2:hover {
-    background: $blue-2;
+    border: $btn-border--default solid $blue-1;
+    background: $white;
+    color: $blue-1;
 }
 
 .scheme-b1wb1 {
@@ -269,6 +277,11 @@ section#donation {
         padding: 2rem $global-padding $global-padding;
     }
 
+    .donate-card:hover {
+        background: $green-1 !important;
+        cursor: pointer;
+    }
+
     .donate-card-image {
         height: 110px;
     }
@@ -405,6 +418,7 @@ footer {
     height: 260px;
     margin: auto;
 }
+
 .image-cell img {
     width: 100%;
     height: 100%;
