@@ -195,6 +195,12 @@ section#donation {
 
     a {
         color: white;
+        display: block;
+        width: 100%;
+    }
+
+    a:active {
+        border: none;
     }
 }
 
