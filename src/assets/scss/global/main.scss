@@ -173,7 +173,7 @@ section#donation {
 }
 
 .oc-tel {
-    margin-bottom: $global-margin;
+    margin-top: 3rem;
     padding: $global-padding;
     span {
         color: $blue-1;
@@ -198,10 +198,18 @@ section#donation {
     }
 }
 
-.toggle-oc {
+.toggle-open {
     font-size: 2rem;
     display: none !important;
     cursor: pointer;
+}
+
+.toggle-close {
+    margin: $global-margin 0;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
 }
 
 @import 'footer';
