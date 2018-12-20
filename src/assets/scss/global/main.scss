@@ -198,5 +198,11 @@ section#donation {
     }
 }
 
+.toggle-oc {
+    font-size: 2rem;
+    display: none !important;
+    cursor: pointer;
+}
+
 @import 'footer';
 @import 'adaptions';

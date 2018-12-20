@@ -6,12 +6,12 @@ body {
 }
 
 .logo {
-    background: url(#{$path-images}logo.png) no-repeat;
     background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 30px;
     font-size: 2rem;
     max-width: 550px;
-    min-height: 85px;
-
+    min-height: 75px;
     .logo__strapline {
         font-size: 1rem;
         display: block;
