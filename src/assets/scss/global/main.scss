@@ -80,12 +80,14 @@ section#donation {
         }
     }
 
+    .donate-card-wrapper {
+        padding: 2rem 0;
+    }
+
     .donate-card {
         background: $white;
-        min-height: 250px;
         width: 220px;
         color: $blue-2;
-        margin: $global-margin;
         text-align: center;
         padding: 2rem $global-padding $global-padding;
     }
@@ -202,20 +204,6 @@ section#donation {
     a:active {
         border: none;
     }
-}
-
-.toggle-open {
-    font-size: 2rem;
-    display: none !important;
-    cursor: pointer;
-}
-
-.toggle-close {
-    margin: $global-margin 0;
-    font-size: 2rem;
-    cursor: pointer;
-    position: absolute;
-    right: 1rem;
 }
 
 @import 'footer';

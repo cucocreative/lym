@@ -48,11 +48,13 @@ footer {
     background-position: bottom;
     background-repeat: no-repeat;
     position: relative;
+    padding: 0 $global-padding;
 }
 
 .footer-bottom {
     position: absolute;
     bottom: 0;
+    left: 0;
     text-align: center;
     width: 100%;
 
@@ -63,6 +65,7 @@ footer {
 
 .social {
     height: 120px;
+    margin-left: 0;
     li {
         display: inline-block;
         margin: $global-margin;

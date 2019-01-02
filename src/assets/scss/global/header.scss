@@ -63,3 +63,17 @@ body {
         }
     }
 }
+
+.toggle-open {
+    font-size: 2rem;
+    display: none !important;
+    cursor: pointer;
+}
+
+.toggle-close {
+    margin: $global-margin 0;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+}
