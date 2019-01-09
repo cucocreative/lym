@@ -261,5 +261,17 @@ section#donation {
     }
 }
 
+#article {
+    padding: 4rem 10rem;
+
+    .body {
+        margin-top: 4rem;
+    }
+
+    h2 {
+        color: $blue-1;
+    }
+}
+
 @import 'footer';
 @import 'adaptions';

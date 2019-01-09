@@ -23,6 +23,10 @@
     #here-to-help p {
         font-size: 2rem;
     }
+
+    #article {
+        padding: 4rem 1rem;
+    }
 }
 
 @include breakpoint(medium down) {
@@ -60,6 +64,12 @@
 
     section#donation .donate-desc {
         padding: 0rem 2rem 1rem 2rem;
+    }
+}
+
+@include breakpoint(medium) {
+    #article {
+        padding: 4rem 5rem;
     }
 }
 
