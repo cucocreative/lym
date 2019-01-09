@@ -1,4 +1,8 @@
 
+a:focus {
+    outline: 0;
+}
+
 .btn--defaults {
     border-radius: $border-radius--default;
     background: none;

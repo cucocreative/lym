@@ -4,6 +4,10 @@
 @import 'color-schemes';
 @import 'header';
 
+.mt-30 {
+    margin-top: 30px;
+}
+
 hr {
     border: 0;
     height: 21px;
@@ -61,19 +65,52 @@ section#what-we-do {
     }
 }
 
-.what-we-do-desc {
+.volunteer-a {
+    background: $white;
+
+    .bg-grey {
+        background: $light-gray;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .btn {
+        color: $blue-2;
+    }
+}
+
+.what-we-do-desc, .volunteer-desc, .legacy-desc {
     padding: 4rem;
-    color: $white;
     overflow: auto;
+}
+
+.what-we-do-desc {
+    color: $white;
+}
+
+.volunteer-desc {
+    color: $blue-2;
+}
+
+.legacy-desc {
+    color: $white;
+    background: $blue-1;
+    height: 100%;
 }
 
 // donation section
 section#donation {
     background: $blue-2;
     color: $white;
+    
+    .wrapper {
+        padding: 3rem 0;
+    }
 
     .donate-desc {
-        padding: 4rem 1rem;
+        padding: 0rem 1rem;
 
         p {
             margin-bottom: $global-padding * 2;
@@ -203,6 +240,24 @@ section#donation {
 
     a:active {
         border: none;
+    }
+}
+
+#here-to-help {
+    .cell {
+        background: $blue-2;
+        color: $white;
+        padding: 5em;
+    }
+
+    p {
+        font-size: 3em;
+        width: 70%;
+        margin: 1em auto;
+    }
+
+    img {
+        width: 200px;
     }
 }
 
