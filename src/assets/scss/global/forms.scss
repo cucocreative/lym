@@ -34,14 +34,33 @@
     margin: 40px auto 0;
 }
 
-.message {
-    height: 19rem;
-}
-
 .btn-apply {
     width: 250px;
 }
 
 .btn-email {
     width: 150px;
+}
+
+#form-volunteer,
+#form-legacy {
+    .input {
+        margin-bottom: 3rem;
+    }
+
+    form {
+        margin-top: 75px;
+    }
+}
+
+#form-volunteer {
+    .message {
+        height: 18.7rem;
+    }
+}
+
+#form-legacy {
+    .message {
+        height: 13.3rem;
+    }
 }
