@@ -5,38 +5,6 @@ footer {
     .sign-up {
         margin-top: 4rem;
     }
-
-    .email {
-        border-radius: 20px;
-        border: 2px solid $blue-1;
-        color: $blue-1;
-        max-width: 400px;
-        margin: 40px auto 0;
-        padding: 1rem;
-        text-align: center;
-        outline: none;
-    }
-
-    .email:focus {
-        border: 2px solid $blue-1;
-    }
-
-    ::placeholder {
-        /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: $blue-1;
-        opacity: 1;
-        /* Firefox */
-    }
-
-    :-ms-input-placeholder {
-        /* Internet Explorer 10-11 */
-        color: $blue-1;
-    }
-
-    ::-ms-input-placeholder {
-        /* Microsoft Edge */
-        color: $blue-1;
-    }
 }
 
 .footer-repeat {

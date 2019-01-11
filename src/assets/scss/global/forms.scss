@@ -1,0 +1,47 @@
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $blue-1;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $blue-1;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $blue-1;
+}
+
+.input {
+    border-radius: 20px;
+    border: 2px solid $blue-1;
+    color: $blue-1;
+    padding: 1rem;
+    text-align: center;
+    outline: none;
+}
+
+.input:focus {
+    border: 2px solid $blue-1;
+}
+
+.email {
+    max-width: 400px;
+    margin: 40px auto 0;
+}
+
+.message {
+    height: 19rem;
+}
+
+.btn-apply {
+    width: 250px;
+}
+
+.btn-email {
+    width: 150px;
+}

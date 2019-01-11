@@ -1,4 +1,5 @@
 
+@import 'forms';
 @import 'fonts';
 @import 'buttons';
 @import 'color-schemes';
@@ -13,6 +14,10 @@ hr {
     height: 21px;
     background: url(#{$path-images}hr.png) 50% 0 no-repeat;
     margin: 1em 0;
+}
+
+.std-page-padding {
+    padding: 4rem 10rem;
 }
 
 // hero
@@ -262,14 +267,22 @@ section#donation {
 }
 
 #article {
-    padding: 4rem 10rem;
-
     .body {
         margin-top: 4rem;
     }
 
     h2 {
         color: $blue-1;
+    }
+}
+
+#form-volunteer {
+    .input {
+        margin-bottom: 3rem;
+    }
+
+    form {
+        margin-top: 75px;
     }
 }
 

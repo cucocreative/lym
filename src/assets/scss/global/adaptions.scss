@@ -24,7 +24,7 @@
         font-size: 2rem;
     }
 
-    #article {
+    .std-page-padding {
         padding: 4rem 1rem;
     }
 }
@@ -68,7 +68,7 @@
 }
 
 @include breakpoint(medium) {
-    #article {
+    .std-page-padding {
         padding: 4rem 5rem;
     }
 }
