@@ -27,6 +27,24 @@
     .std-page-padding {
         padding: 4rem 1rem;
     }
+
+    #adopt {
+        .btn-panel a {
+            display: block;
+        }
+
+        .btn-panel a {
+            width: 100%;
+        }
+
+        .btn-panel a:first-child {
+            margin-right: 0;
+        }
+
+        .btn-panel a:last-child {
+            margin-left: 0;
+        }
+    }
 }
 
 @include breakpoint(medium down) {

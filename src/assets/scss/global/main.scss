@@ -280,6 +280,51 @@ section#donation {
     }
 }
 
+#adopt {
+    .tel {
+        color: $blue-2;
+        font-weight: bold;
+    }
+
+    .btn-panel {
+        margin-top: 50px;
+    }
+
+    .btn-panel a {
+        width: 200px;
+    }
+
+    .btn-panel a:first-child {
+        margin-right: 20px;
+    }
+
+    .btn-panel a:last-child {
+        margin-left: 20px;
+    }
+
+    #cat-details {
+        border: none;
+        width: 100%;
+    }
+
+    #cat-details td {
+        padding: 5px;
+    }
+
+    #cat-details tr td:first-child {
+        font-weight: bold;
+        padding-right: 20px;
+    }
+
+    h2, h3 {
+        color: $blue-1;
+    }
+
+    h3 {
+        margin-top: 40px;
+    }
+}
+
 
 @import 'footer';
 @import 'adaptions';
