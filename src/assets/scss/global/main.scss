@@ -86,7 +86,10 @@ section#what-we-do {
     }
 }
 
-.what-we-do-desc, .volunteer-desc, .legacy-desc {
+.what-we-do-desc, 
+.volunteer-desc, 
+.legacy-desc,
+.contact-desc {
     padding: 4rem;
     overflow: auto;
 }
@@ -102,6 +105,12 @@ section#what-we-do {
 .legacy-desc {
     color: $white;
     background: $blue-1;
+    height: 100%;
+}
+
+.contact-desc {
+    color: $white;
+    background: $blue-2;
     height: 100%;
 }
 
@@ -159,7 +168,7 @@ section#donation {
 }
 
 // what news section
-.what-news-text {
+.what-news-text, .shops-text {
     padding: 1.5rem 1rem;
     width: 260px;
     margin: auto;
@@ -167,6 +176,10 @@ section#donation {
     h4 {
         color: $blue-1;
     }
+}
+
+.shops-text {
+    margin-top: 25px;
 }
 
 .image-cell {
@@ -319,6 +332,11 @@ section#donation {
     h3 {
         margin-top: 40px;
     }
+}
+
+.shops-intro {
+    width: 65%;
+    margin: auto;
 }
 
 
