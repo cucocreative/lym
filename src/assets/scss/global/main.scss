@@ -279,6 +279,73 @@ section#donation {
     }
 }
 
+#acheivements {
+
+    h3 {
+        text-align: center;
+        margin: auto;
+    }
+
+    .cell {
+        background: $blue-1;
+        color: $white;
+        padding: 3rem 5rem 2rem 5rem;
+    }
+
+    p {
+        font-size: 1.5em;
+        margin: 1em auto;
+        font-family: 'ludicrous';
+        color: black;
+    }
+
+    p span {
+        font-size: 1.5em;
+        color: white;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+#team {
+
+    padding: 2rem 0 5rem 0;
+    background: $blue-2;
+
+    h3 {
+        text-align: center;
+        margin: auto;
+    }
+
+    .cell {
+        background: $blue-2;
+        color: $white;
+        padding: 3rem 5rem 2rem 5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 1em auto;
+        color: white;
+    }
+
+    .image-cell {
+        padding: 1rem;
+    }
+
+    .jobtitle {
+        font-size: 1.5rem;
+        font-family: 'galanoMedium'
+    }
+
+    .overlay {
+        line-height: .8;
+    }
+}
+
 #article {
     .body {
         margin-top: 4rem;

@@ -45,6 +45,14 @@
             margin-left: 0;
         }
     }
+
+    #acheivements .cell {
+        padding: 0;
+    }
+
+    #acheivements .cell:first-child {
+        padding: 5rem 0;
+    }
 }
 
 @include breakpoint(medium down) {
@@ -89,6 +97,8 @@
     .std-page-padding {
         padding: 4rem 5rem;
     }
+
+
 }
 
 @include breakpoint(large up) {
