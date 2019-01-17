@@ -86,34 +86,6 @@ section#what-we-do {
     }
 }
 
-.what-we-do-desc, 
-.volunteer-desc, 
-.legacy-desc,
-.contact-desc {
-    padding: 4rem;
-    overflow: auto;
-}
-
-.what-we-do-desc {
-    color: $white;
-}
-
-.volunteer-desc {
-    color: $blue-2;
-}
-
-.legacy-desc {
-    color: $white;
-    background: $blue-1;
-    height: 100%;
-}
-
-.contact-desc {
-    color: $white;
-    background: $blue-2;
-    height: 100%;
-}
-
 // donation section
 section#donation {
     background: $blue-2;
@@ -404,6 +376,31 @@ section#donation {
 .shops-intro {
     width: 65%;
     margin: auto;
+}
+
+#contact {
+    .contact-details {
+        line-height: 2rem;
+        margin-left: 60px;
+    }
+    .contact-details i {
+        font-size: 2rem;
+        margin-left: -3rem;
+    }
+
+    .contact-details  li {
+        margin-bottom: 15px;
+    }
+}
+
+.panel {
+    height: 100%;
+    padding: 4rem;
+    overflow: auto;
+}
+
+.icon-blue i {
+    color: $blue-1;
 }
 
 
