@@ -64,6 +64,15 @@ body {
     }
 }
 
+.is-dropdown-submenu {
+    border: none;
+}
+
+.menu a:hover,
+.is-dropdown-submenu a:hover {
+    color: $blue-1 !important;
+}
+
 .toggle-open {
     font-size: 2rem;
     display: none !important;
